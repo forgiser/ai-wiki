@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Agent 八股知识库</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="description" content="AI Agent 面试指北 — 覆盖 LLM基础 → Agent核心 → RAG → 工程化 → 大厂真题 的完整面试知识体系" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <style>
+    .library-switch { position: fixed; top: 12px; right: 18px; z-index: 100; padding: 8px 12px; border-radius: 8px; background: #fff; box-shadow: 0 2px 12px #0002; font-size: 13px; text-decoration: none; }
+    @media (max-width: 768px) { .library-switch { right: 60px; } }
+  </style>
+</head>
+
+<body>
+  <a class="library-switch" href="../">返回文档库选择</a>
+  <div id="app">加载中...</div>
+  <script>
+    window.$docsify = {
+      name: 'AI Agent 八股知识库',
+      repo: 'https://github.com/forgiser/ai-wiki',
+      loadSidebar: true,
+      coverpage: true,
+      autoHeader: true,
+      subMaxLevel: 3,
+      search: {
+        namespace: 'ai-interview-wiki',
+        placeholder: '🔍 搜索知识点...',
+        noData: '😞 没有找到相关内容',
+        depth: 4,
+        maxAge: 86400000,
+      },
+      copyCode: {
+        buttonText: '📋 复制',
+        errorText: '❌ 复制失败',
+        successText: '✅ 已复制',
+      },
+      pagination: {
+        previousText: '⬅ 上一篇',
+        nextText: '下一篇 ➡',
+      },
+    };
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+</body>
+
+</html>

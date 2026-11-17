@@ -1,50 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
 <head>
-  <meta charset="UTF-8" />
-  <title>AI Agent 八股知识库</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="description" content="AI Agent 面试指北 — 覆盖 LLM基础 → Agent核心 → RAG → 工程化 → 大厂真题 的完整面试知识体系" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI Agent 学习文档库：面试知识与系统课程">
+  <title>AI Agent 文档库</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #f5f7fb; color: #182334; }
+    main { max-width: 1080px; margin: 0 auto; padding: clamp(40px, 8vw, 96px) 24px 64px; }
+    .eyebrow { color: #4566b2; font-size: 14px; font-weight: 700; letter-spacing: .08em; }
+    h1 { margin: 14px 0 16px; font-size: clamp(36px, 6vw, 60px); line-height: 1.16; }
+    .intro { max-width: 640px; margin: 0; color: #526071; font-size: 18px; line-height: 1.75; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 48px; }
+    .card { display: flex; flex-direction: column; min-height: 300px; padding: 32px; border: 1px solid #dce3ee; border-radius: 22px; background: #fff; color: inherit; text-decoration: none; box-shadow: 0 10px 30px rgba(24, 35, 52, .05); transition: transform .18s ease, box-shadow .18s ease; }
+    .card:hover, .card:focus-visible { transform: translateY(-4px); box-shadow: 0 18px 42px rgba(24, 35, 52, .12); outline: none; }
+    .icon { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 15px; background: #e8efff; color: #3158af; font-size: 25px; }
+    .card:nth-child(2) .icon { background: #e4f4ec; color: #177b50; }
+    h2 { margin: 26px 0 12px; font-size: 25px; }
+    .card p { margin: 0; color: #526071; line-height: 1.7; }
+    .meta { margin-top: auto; padding-top: 28px; color: #3158af; font-weight: 700; }
+    .card:nth-child(2) .meta { color: #177b50; }
+    footer { margin-top: 46px; color: #667487; font-size: 14px; }
+    footer a { color: inherit; }
+    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } .card { min-height: 260px; } }
+    @media (prefers-reduced-motion: reduce) { .card { transition: none; } }
+  </style>
 </head>
-
 <body>
-  <div id="app">加载中...</div>
-  <script>
-    window.$docsify = {
-      name: 'AI Agent 八股知识库',
-      repo: '',
-      loadSidebar: true,
-      coverpage: true,
-      autoHeader: true,
-      subMaxLevel: 3,
-      search: {
-        placeholder: '🔍 搜索知识点...',
-        noData: '😞 没有找到相关内容',
-        depth: 4,
-        maxAge: 86400000,
-      },
-      copyCode: {
-        buttonText: '📋 复制',
-        errorText: '❌ 复制失败',
-        successText: '✅ 已复制',
-      },
-      pagination: {
-        previousText: '⬅ 上一篇',
-        nextText: '下一篇 ➡',
-      },
-    };
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+  <main>
+    <div class="eyebrow">AI AGENT · LEARNING HUB</div>
+    <h1>选择你的文档库</h1>
+    <p class="intro">按学习目标进入不同资料库。两个文档库各自提供目录导航和站内搜索。</p>
+    <div class="grid">
+      <a class="card" href="./interview-wiki/" aria-label="进入 AI Agent 八股知识库">
+        <span class="icon" aria-hidden="true">📚</span>
+        <h2>AI Agent 八股知识库</h2>
+        <p>覆盖 LLM 基础、RAG、Agent 架构、工程化实践和高频面试题，适合查阅知识点与面试复习。</p>
+        <span class="meta">进入文档库 →</span>
+      </a>
+      <a class="card" href="./AgentLearn/" aria-label="进入 AgentLearn 系统课程">
+        <span class="icon" aria-hidden="true">🧭</span>
+        <h2>AgentLearn 系统课程</h2>
+        <p>从程序与模型运行机制出发，循序学习 Agent Runtime、工具协议、框架和系统设计，适合按路线深入学习。</p>
+        <span class="meta">进入文档库 →</span>
+      </a>
+    </div>
+    <footer><a href="https://github.com/forgiser/ai-wiki">查看 GitHub 仓库</a></footer>
+  </main>
 </body>
-
 </html>

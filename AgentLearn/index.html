@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AgentLearn：从大模型基础到 Agent Runtime 的系统课程">
+  <title>AgentLearn 系统课程</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    .library-switch { position: fixed; top: 12px; right: 18px; z-index: 100; padding: 8px 12px; border-radius: 8px; background: #fff; box-shadow: 0 2px 12px #0002; font-size: 13px; text-decoration: none; }
+    @media (max-width: 768px) { .library-switch { right: 60px; } }
+  </style>
+</head>
+<body>
+  <a class="library-switch" href="../">返回文档库选择</a>
+  <div id="app">加载中...</div>
+  <script>
+    window.$docsify = {
+      name: 'AgentLearn 系统课程',
+      repo: 'https://github.com/forgiser/ai-wiki',
+      loadSidebar: true,
+      relativePath: true,
+      subMaxLevel: 2,
+      autoHeader: true,
+      search: {
+        namespace: 'agentlearn',
+        placeholder: '搜索 AgentLearn...',
+        noData: '没有找到相关内容',
+        depth: 4,
+        maxAge: 86400000
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+</body>
+</html>
