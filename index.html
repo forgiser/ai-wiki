@@ -49,5 +49,11 @@
     </div>
     <footer><a href="https://github.com/forgiser/ai-wiki">查看 GitHub 仓库</a></footer>
   </main>
+  <script>
+    // Keep links to the former root Docsify site working after the move.
+    if (/^#\/(?!\/?(?:\?|$))/.test(location.hash)) {
+      location.replace(new URL('./interview-wiki/' + location.hash, location.href));
+    }
+  </script>
 </body>
 </html>
